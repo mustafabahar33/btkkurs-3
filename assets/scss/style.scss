@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
+    object-fit: contain;
 
     &-card {
         position: absolute;
@@ -25,7 +27,7 @@
             padding: 10px 0 10px 0;
             color: #1F4B43;
             width: 260px;
-            margin-top: 150px;
+            margin-top: 50px;
         }
 
         &-title {
@@ -40,7 +42,7 @@
         &-search {
             display: flex;
             position: relative;
-            margin-top: 50px;
+            margin-top: 40px;
 
             & .icon-search {
                 background-image: url(../img/icon/search.svg);
@@ -49,34 +51,37 @@
                 background-size: 20px;
                 background-color: #E7C873;
                 border-radius: 50%;
-                padding: 20px;
+                padding: 25px;
                 display: inline-block;
                 width: 20px;
                 height: 20px;
                 z-index: 2;
                 position: absolute;
-                left: 88.8%;
-                top: 5px
+                left: 91%;
+                top: 2.5px
             }
 
-            & input {
+            & .search-input {
                 border-radius: 140px;
                 border: solid 1px #ffffff;
-                width: 400px;
-                height: 50px;
+                width: 600px;
+                height: 55px;
                 z-index: 1;
+
             }
         }
 
         &-desc2 {
             color: #ffffff;
             margin-top: 25px;
+            font-weight: 400;
         }
 
         &-type {
             display: flex;
             gap: 20px;
-            margin-top: 30px;
+            margin-top: 15px;
+            color: #ffffff;
 
             &-btn {
                 background-color: #ffffff1c;
@@ -87,50 +92,47 @@
                 align-items: center;
                 gap: 5px;
                 backdrop-filter: blur(10px);
-
-                & .icon-home {
-                    background-image: url(../img/icon/home.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 20px;
-                    background-color: #ffffff;
-                    border-radius: 50%;
-                    padding: 20px;
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    z-index: 2;
-                }
-
-                & .icon-apt {
-                    background-image: url(../img/icon/apt.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 20px;
-                    background-color: #ffffff;
-                    border-radius: 50%;
-                    padding: 20px;
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    z-index: 2;
-                }
-
-                & .icon-vlg {
-                    background-image: url(../img/icon/vlg.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 20px;
-                    background-color: #ffffff;
-                    border-radius: 50%;
-                    padding: 20px;
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    z-index: 2;
-                }
-
             }
+
+            & .icon-home {
+                background-image: url(../img/icon/home.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                padding: 20px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+
+            & .icon-apt {
+                background-image: url(../img/icon/apt.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                padding: 20px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+
+            & .icon-vlg {
+                background-image: url(../img/icon/vlg.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                padding: 20px;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+
         }
     }
 }
