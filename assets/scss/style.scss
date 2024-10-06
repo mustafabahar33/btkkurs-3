@@ -14,7 +14,7 @@
         align-items: center;
         gap: 10px;
 
-        & img {
+        img {
             max-width: 100%;
             max-height: 100%;
         }
@@ -135,4 +135,55 @@
 
         }
     }
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.product-card {
+    position: relative;
+
+    &-image {
+        max-width: 100%;
+
+        img {
+            max-width: 80%;
+            border-radius: 20px;
+
+        }
+    }
+
+    &-content {
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 8px;
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+        width: calc(100%-500px);
+
+        &-loc {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            .icon-bed {
+                background-image: url(../img/product/loc.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+    }
+
 }
