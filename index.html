@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
     <title>Mustafa BAHAR</title>
 </head>
 
@@ -78,12 +80,13 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/img/slider/slider-1.jpg" class="w-100" alt="slider">
+            <img src="assets/img/slider/logo.svg" data-src="assets/img/slider/slider-1.jpg"
+                class="hero-slider-image lazyload">
         </div>
     </section>
 
     <section>
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <span class="d-flex justify-content-center aling-item-center fs-2">Why You Should Work With Us</span>
             <span class="d-flex justify-content-center aling-item-center fw-lighter">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.</span>
@@ -119,10 +122,17 @@
     </section>
 
     <section>
-        <div class="container">
-            <div class="row">
+        <div class="container mt-5">
+            <span class="d-flex justify-content-center aling-item-center fs-2">Why You Should Work With Us</span>
+            <span class="d-flex justify-content-center aling-item-center fw-lighter">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</span>
+            <div class="row mt-5">
                 <div class="col-4">
                     <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
                         <div class="product-card-content">
                             <div class="product-card-content-tittle">
                                 <span class="fs-6 fw-bold">Luxury Family Home</span>
@@ -131,18 +141,18 @@
                                 <i class="icon-bed"></i>
                                 <span>1800-1818 79th St</span>
                             </div>
-                            <div class="product-card-content-bt">
-                                <span>395₺</span>
-                                <div class="product-card-content-icon">
-                                    <div class="product-card-content-icon-item">
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price">395.000₺</span>
+                                <div class="product-card-content-icon d-flex gap-3">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
                                         <i class="icon icon-bed"></i>
                                         <span>4</span>
                                     </div>
-                                    <div class="product-card-content-icon-item">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
                                         <i class="icon icon-bath"></i>
                                         <span>1</span>
                                     </div>
-                                    <div class="product-card-content-icon-item">
+                                    <div class="product-card-content-icon-item d-flex gap-2">
                                         <i class="icon icon-m2"></i>
                                         <span>400</span>
                                     </div>
@@ -154,16 +164,373 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-tittle">
+                                <span class="fs-6 fw-bold">Skyper Pool Apartment</span>
+                            </div>
+                            <div class="product-card-content-loc">
+                                <i class="icon-bed"></i>
+                                <span>1020 Bloomingdale Ave</span>
+                            </div>
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price fs-6">280.000₺</span>
+                                <div class="product-card-content-bt-icon d-flex gap-3">
+                                    <div class="product-card-content-bt-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bed"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bath"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex gap-2">
+                                        <i class="icon icon-m2"></i>
+                                        <span>400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/product/product-2.png" alt="product-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-tittle">
+                                <span class="fs-6 fw-bold">North Dillard Street</span>
+                            </div>
+                            <div class="product-card-content-loc">
+                                <i class="icon-bed"></i>
+                                <span>4330 Bell Shoals Rd</span>
+                            </div>
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price">395/Aylık</span>
+                                <div class="product-card-content-icon d-flex gap-3">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bed"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bath"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex gap-2">
+                                        <i class="icon icon-m2"></i>
+                                        <span>400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/product/product-3.png" alt="product-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-tittle">
+                                <span class="fs-6 fw-bold">Eaton Garth Penthouse/span>
+                            </div>
+                            <div class="product-card-content-loc">
+                                <i class="icon-bed"></i>
+                                <span>7722 18th Ave, Brooklyn</span>
+                            </div>
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price">180.000₺</span>
+                                <div class="product-card-content-icon d-flex gap-3">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bed"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bath"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex gap-2">
+                                        <i class="icon icon-m2"></i>
+                                        <span>400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/product/product-4.png" alt="product-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-tittle">
+                                <span class="fs-6 fw-bold">New Apartment Nice Wiew</span>
+                            </div>
+                            <div class="product-card-content-loc">
+                                <i class="icon-bed"></i>
+                                <span>42 Avenue O, Brooklyn</span>
+                            </div>
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price">850/Aylık</span>
+                                <div class="product-card-content-icon d-flex gap-3">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bed"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bath"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex gap-2">
+                                        <i class="icon icon-m2"></i>
+                                        <span>400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/product/product-5.png" alt="product-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">FOR SALE</span>
+                            <span class="bg-gold">FEATURED</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-tittle">
+                                <span class="fs-6 fw-bold">Diamond Manor Apartment</span>
+                            </div>
+                            <div class="product-card-content-loc">
+                                <i class="icon-bed"></i>
+                                <span>7802 20th Ave, Brooklyn</span>
+                            </div>
+                            <div class="product-card-content-bt d-flex gap-4">
+                                <span class="product-card-content-bt-price">259.000₺</span>
+                                <div class="product-card-content-icon d-flex gap-3">
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bed"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex border-end gap-2 pe-2">
+                                        <i class="icon icon-bath"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="product-card-content-icon-item d-flex gap-2">
+                                        <i class="icon icon-m2"></i>
+                                        <span>400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/product/product-6.png" alt="product-1">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section>
+        <div class="container py-5 bg-light">
+            <span class="d-flex justify-content-center aling-item-center fs-2">Find Properties in These Cities</span>
+            <span class="d-flex justify-content-center aling-item-center fw-lighter">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</span>
+            <div class="swiper --property-slider mt-5">
+                <div class="swiper-wrapper pb-5">
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5">Chicago</span>
+                                <span class="fs-6 fw-light">2 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-1.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5">Los Angeles</span>
+                                <span class="fs-6 fw-light">1 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-5.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5 fw-bold">Miami</span>
+                                <span class="fs-6 fw-light">2 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-3.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5">Florida</span>
+                                <span class="fs-6 fw-light">3 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-4.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5">New York</span>
+                                <span class="fs-6 fw-light">8 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-1.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5">Los Angeles</span>
+                                <span class="fs-6 fw-light">1 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-5.png" alt="Find">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="find-property-card">
+                            <div class="find-property-card-contact">
+                                <span class="fs-5 fw-bold">Miami</span>
+                                <span class="fs-6 fw-light">2 Properties</span>
+                            </div>
+                            <img src="assets/img/find/find-3.png" alt="Find">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper(".--property-slider", {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                freeMode: true,
+                loop: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
 
+            });
+        </script>
+    </section>
 
+    <section class="py-5 how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="how-it-work-one">
+                                <img src="assets/img/how-it-work/content-1.jpg" alt="content">
+                                <span class="content fw-light">
+                                    <div class="icon">
+                                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.0001 22.213H5.25008C4.80564 22.213 4.44453 22.0602 4.16675 21.7547C3.88897 21.4491 3.75008 21.1019 3.75008 20.713V10.2964L11.5834 3.37969C11.9723 3.04635 12.4445 2.87969 13.0001 2.87969C13.5556 2.87969 14.0279 3.04635 14.4167 3.37969L24.3334 12.1297C24.4445 12.2408 24.5834 12.2825 24.7501 12.2547C24.9167 12.2269 25.0556 12.1575 25.1667 12.0464C25.2779 11.9352 25.3195 11.7964 25.2917 11.6297C25.264 11.463 25.1945 11.3241 25.0834 11.213L23.4167 9.79635V3.87969C23.4167 3.04635 23.1112 2.32413 22.5001 1.71302C21.889 1.10191 21.1667 0.810244 20.3334 0.838022C19.5001 0.865799 18.7917 1.17135 18.2084 1.75469C17.6251 2.33802 17.3056 3.04635 17.2501 3.87969V4.37969L15.1667 2.54635C14.5556 1.9908 13.8334 1.71302 13.0001 1.71302C12.1667 1.71302 11.4445 1.9908 10.8334 2.54635L0.916748 11.213C0.750081 11.3241 0.666748 11.463 0.666748 11.6297C0.666748 11.7964 0.722304 11.9352 0.833415 12.0464C0.944526 12.1575 1.08341 12.2269 1.25008 12.2547C1.41675 12.2825 1.55564 12.2408 1.66675 12.1297L2.58341 11.3797V20.713C2.58341 21.4352 2.8473 22.0602 3.37508 22.588C3.90286 23.1158 4.52786 23.3797 5.25008 23.3797H13.0001C13.1667 23.3797 13.3056 23.3241 13.4167 23.213C13.5279 23.1019 13.5834 22.963 13.5834 22.7964C13.5834 22.6297 13.5279 22.4908 13.4167 22.3797C13.3056 22.2686 13.1667 22.213 13.0001 22.213ZM18.4167 3.87969C18.4723 3.32413 18.6806 2.8658 19.0417 2.50469C19.4029 2.14358 19.8473 1.97691 20.3751 2.00469C20.9029 2.03247 21.3473 2.22691 21.7084 2.58802C22.0695 2.94913 22.2501 3.37969 22.2501 3.87969V8.71302L18.4167 5.37969V3.87969ZM13.0001 6.71302C12.2223 6.71302 11.5556 6.9908 11.0001 7.54635C10.4445 8.10191 10.1667 8.76858 10.1667 9.54635C10.1667 10.3241 10.4445 10.9908 11.0001 11.5464C11.5556 12.1019 12.2223 12.3797 13.0001 12.3797C13.7779 12.3797 14.4445 12.1019 15.0001 11.5464C15.5556 10.9908 15.8334 10.3241 15.8334 9.54635C15.8334 8.76858 15.5556 8.10191 15.0001 7.54635C14.4445 6.9908 13.7779 6.71302 13.0001 6.71302ZM14.6667 9.54635C14.6667 10.0464 14.5001 10.4491 14.1667 10.7547C13.8334 11.0602 13.4445 11.213 13.0001 11.213C12.5556 11.213 12.1667 11.0602 11.8334 10.7547C11.5001 10.4491 11.3334 10.0602 11.3334 9.58802C11.3334 9.1158 11.5001 8.71302 11.8334 8.37969C12.1667 8.04635 12.5556 7.87969 13.0001 7.87969C13.4445 7.87969 13.8334 8.04635 14.1667 8.37969C14.5001 8.71302 14.6667 9.10191 14.6667 9.54635ZM25.1667 22.463L23.1667 20.3797C23.6667 19.6575 23.9167 18.8519 23.9167 17.963C23.9167 16.8519 23.514 15.9075 22.7084 15.1297C21.9029 14.3519 20.9445 13.963 19.8334 13.963C18.7223 13.963 17.764 14.3519 16.9584 15.1297C16.1529 15.9075 15.7501 16.8658 15.7501 18.0047C15.7501 19.1436 16.1529 20.1019 16.9584 20.8797C17.764 21.6575 18.7223 22.0464 19.8334 22.0464C20.7779 22.0464 21.6112 21.7686 22.3334 21.213L24.2501 23.213C24.3612 23.3241 24.5001 23.3936 24.6667 23.4214C24.8334 23.4491 24.9862 23.4075 25.1251 23.2964C25.264 23.1852 25.3334 23.0464 25.3334 22.8797C25.3334 22.713 25.2779 22.5741 25.1667 22.463ZM19.8334 20.8797C19.0556 20.8797 18.3751 20.6019 17.7917 20.0464C17.2084 19.4908 16.9167 18.8102 16.9167 18.0047C16.9167 17.1991 17.2084 16.5186 17.7917 15.963C18.3751 15.4075 19.0695 15.1297 19.8751 15.1297C20.6806 15.1297 21.3612 15.4075 21.9167 15.963C22.4723 16.5186 22.7501 17.1991 22.7501 18.0047C22.7501 18.8102 22.4723 19.4908 21.9167 20.0464C21.3612 20.6019 20.6667 20.8797 19.8334 20.8797Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column">Properties For Sel <span class="fw-bold">14K</div>
+                                </span>
 
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="how-it-work-two">
+                                <img src="assets/img/how-it-work/content-2.jpg" alt="content">
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="how-it-work-three">
+                                <img src="assets/img/how-it-work/content-3.jpg" alt="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="d-flex justify-content-center flex-column h-100 gap-3 ms-5">
+                        <span class="d-block fs-2 ">How It works? <br> Find a
+                            perfect home</span>
+                        <span class="d-block fw-lighter">Pellentesque egestas
+                            elementum egestas faucibus
+                            sem. <br> Velitnunc egestas ut morbi. Leo diam diam.</span>
+                        <div class="how-it-work-property gap-2">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-home"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span class="fl-1">Find Real Estate</span>
+                                <span class="fw-lighter fl-1">Sumo petentium ut per, at his wisim utinam <br>
+                                    adipiscing. Est ei
+                                    graeco</span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property gap-2">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-meet"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span class="fl-1">Meet Realtor</span>
+                                <span class="fw-lighter fl-1">Sumo petentium ut per, at his wisim utinam <br>
+                                    adipiscing. Est ei
+                                    graeco</span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property gap-2">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-take"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span class="fl-1">Take The Keys</span>
+                                <span class="fw-lighter fl-1">Sumo petentium ut per, at his wisim utinam <br>
+                                    adipiscing. Est ei
+                                    graeco</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+        integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+        integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

@@ -1,3 +1,12 @@
+:root {
+    --bg-one: #1F4B43;
+    --bg-two: #E7C873;
+}
+
+img {
+    max-width: 100%;
+}
+
 .hero-slider {
     position: relative;
     display: flex;
@@ -135,6 +144,10 @@
 
         }
     }
+    &-image {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 .work-card {
@@ -148,13 +161,36 @@
 
 .product-card {
     position: relative;
+    margin-bottom: 20px;
+
+    &-tag {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        padding: 20px;
+
+        span {
+            padding: 10px;
+            border-radius: 20px;
+
+            &.bg-green {
+                background-color: var(--bg-one);
+                color: #ffffff;
+
+            }
+
+            &.bg-gold {
+                background-color: var(--bg-two);
+                color: #1A1A1A;
+            }
+        }
+    }
 
     &-image {
-        max-width: 100%;
-
         img {
-            max-width: 80%;
+            max-width: 100%;
             border-radius: 20px;
+            aspect-ratio: 1 / 1.1;
 
         }
     }
@@ -163,10 +199,14 @@
         position: absolute;
         background-color: #ffffff;
         border-radius: 8px;
-        left: 25px;
-        right: 25px;
-        bottom: 25px;
-        width: calc(100%-500px);
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        max-width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
 
         &-loc {
             display: flex;
@@ -184,6 +224,210 @@
             }
 
         }
+
+        &-bt {
+            display: flex;
+            justify-content: space-between;
+
+            &-price {
+                color: #EB664E;
+
+            }
+        }
+
+        &-icon {
+
+            &-item {
+                .icon-bed {
+                    background-image: url(../img/product/icon/bath.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+
+                }
+
+                .icon-bath {
+                    background-image: url(../img/product/icon/m2.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+
+                }
+
+                .icon-m2 {
+                    background-image: url(../img/product/icon/bed.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+
+                }
+            }
+        }
     }
 
+}
+
+.find-property-card {
+    position: relative;
+
+
+    img {
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    &-contact {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        color: #ffffff;
+        background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+.swiper-pagination {
+    &-bullet {
+        background-color: #838383;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+
+        &-active {
+            background-color: #000000;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+
+                border: solid 1px #122223;
+            }
+        }
+    }
+}
+
+.how-it-work {
+    --card-radius: 12px;
+    max-width: 100%;
+
+    &-one {
+        position: relative;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+            border-radius: var(--card-radius);
+        }
+
+        & .content {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 20px;
+            right: 20px;
+            bottom: 0;
+            transform: translateY(50%);
+            gap: 10px;
+
+
+            & .icon {
+                background-color: var(--bg-one);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    }
+
+    &-two {
+        img {
+            border-radius: var(--card-radius);
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+    }
+
+    &-three {
+        img {
+
+            border-radius: var(--card-radius);
+            aspect-ratio: 1/1.1;
+            object-fit: cover;
+        }
+    }
+
+    &-property {
+        display: flex;
+
+        &-icon {
+            display: flex;
+
+            .icon {
+                position: relative;
+                width: 35px;
+                height: 45px;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                &::before {
+                    content: '';
+                    background-color: var(--bg-two);
+                    left: 0;
+                    top: 0;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: -1;
+                    transform: translate(-35%, 50%);
+                }
+
+                &-home {
+                    background-image: url(../img/icon/homenew.svg);
+                }
+
+                &-meet {
+                    background-image: url(../img/icon/meet.svg);
+                }
+
+                &-take {
+                    background-image: url(../img/icon/take.svg);
+                }
+
+            }
+        }
+
+        &:hover &-icon .icon::before {
+            background-color: #FFE190;
+        }
+    }
 }
